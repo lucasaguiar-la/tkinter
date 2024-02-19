@@ -12,7 +12,7 @@ def click():
 # Título e icone
 janela = Tk()
 janela.iconbitmap('favicon.ico')
-janela.title('Contador de cliques...')
+janela.title('Contador de cliques')
 
 # Dimensão da janela
 largura = 500
@@ -36,17 +36,17 @@ janela.resizable(0,0)
 # Labels e textos
 label_01 = Label (
     janela,
-    text="Apenas clique...",
+    text="Apenas...",
     font=("Arial", 20),
     width=100,
     height=2,
-    padx=15,
+    padx=35,
     pady=10,
     anchor=W)
 label_01.pack()
 label_02 = Label (
     janela,
-    text="...no...",
+    text="...clique...",
     font=("Arial", 20),
     width=100,
     height=2,
@@ -54,11 +54,11 @@ label_02 = Label (
 label_02.pack()
 label_03 = Label (
         janela,
-        text="...botão!",
+        text="...no:",
         font=("Arial", 20),
         width=100,
         height=2,
-        padx=15,
+        padx=35,
         pady=10,
         anchor=E)
 label_03.pack()
@@ -66,7 +66,7 @@ label_03.pack()
 # Botão de ação
 btn = Button(
     janela,
-    text='Aperte aqui!',
+    text='BOTÃO!',
     width=20,
     padx=10,
     pady=10,
