@@ -33,6 +33,36 @@ janela.geometry("%dx%d+%d+%d" % (largura, altura, posx, posy))
 # Janela não redimensionável
 janela.resizable(0,0)
 
+# Labels e textos
+label_01 = Label (
+    janela,
+    text="Apenas clique...",
+    font=("Arial", 20),
+    width=100,
+    height=2,
+    padx=15,
+    pady=10,
+    anchor=W)
+label_01.pack()
+label_02 = Label (
+    janela,
+    text="...no...",
+    font=("Arial", 20),
+    width=100,
+    height=2,
+    anchor=CENTER)
+label_02.pack()
+label_03 = Label (
+        janela,
+        text="...botão!",
+        font=("Arial", 20),
+        width=100,
+        height=2,
+        padx=15,
+        pady=10,
+        anchor=E)
+label_03.pack()
+
 # Botão de ação
 btn = Button(
     janela,
